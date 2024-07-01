@@ -46,7 +46,7 @@ function Homepage() {
             style={{ width: "100%" }}
           >
             <motion.img
-              src="../../pizzaNew.png"
+              src="/assets/pizzaNew.png"
               alt="Pizza"
               style={{ width: "100%", height: "auto" }}
               initial={{ opacity: 0, x: "-100vw", rotate: 0 }}
