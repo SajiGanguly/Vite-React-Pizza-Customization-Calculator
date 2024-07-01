@@ -43,7 +43,7 @@ function Toppings({setTheToppings}) {
 
   useEffect(() => {
     async function getToppingData() {
-      const url = "http://localhost:4000/Toppings";
+      const url = "https://json-server-pizza-customization.vercel.app/Toppings";
       const response = await axios.get(url);
      
       setToppingApiData(response.data);

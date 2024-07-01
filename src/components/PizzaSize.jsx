@@ -21,7 +21,7 @@ function PizzaSize({ setTheSize }) {
 
   useEffect(() => {
     async function getData() {
-      const url = "http://localhost:4000/PizzaSize";
+      const url = "https://json-server-pizza-customization.vercel.app/PizzaSize";
       const response = await axios.get(url);
       
       setApiData(response.data);

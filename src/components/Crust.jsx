@@ -20,7 +20,7 @@ function Crust({ setTheCrust }) {
 
   useEffect(() => {
     async function getData() {
-      const url = "http://localhost:4000/Crusts";
+      const url = "https://json-server-pizza-customization.vercel.app/Crusts";
       const response = await axios.get(url);
 
       setApiData(response.data);

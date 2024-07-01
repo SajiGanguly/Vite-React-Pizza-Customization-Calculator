@@ -20,23 +20,23 @@ const mediaVariants = {
 };
 
 const initialCards = [
-  { id: 1, title: "Tomato and mushroom pizza", image: "src/assets/pizza1.jpg" },
-  { id: 2, title: "tomato and oregano pizza", image: "src/assets/pizza2.jpg" },
+  { id: 1, title: "Tomato and mushroom pizza", image: "../../public/assets/pizza1.jpg" },
+  { id: 2, title: "tomato and oregano pizza", image: "../../public/assets/pizza2.jpg" },
   {
     id: 3,
     title: "Italian pizza",
-    image: "src/assets/pizza6.jpg",
+    image: "../../public/assets/pizza6.jpg",
   },
-  { id: 4, title: "All-in-one Pizza", image: "src/assets/pizza3.jpg" },
-  { id: 5, title: "3All-Out pizza", image: "src/assets/pizza5.jpg" },
-  { id: 6, title: "pepperoni pizza", image: "src/assets/pizza4.jpg" },
-  { id: 7, title: "paneer pizza", image: "src/assets/pizza13.jpg" },
-  { id: 8, title: "cheesy pizza", image: "src/assets/pizza7.jpg" },
-  { id: 9, title: "thin sausage pizza", image: "src/assets/pizza9.jpg" },
-  { id: 10, title: "roasted cheese pizza", image: "src/assets/pizza10.jpg" },
-  { id: 11, title: "mozarella cheese pizza", image: "src/assets/pizza11.jpg" },
-  { id: 12, title: "salsa sauce pizza", image: "src/assets/pizza12.jpg" },
-  { id: 13, title: "3All-Out pizza", image: "src/assets/pizza8.jpg" },
+  { id: 4, title: "All-in-one Pizza", image: "../../public/assets/pizza3.jpg" },
+  { id: 5, title: "3All-Out pizza", image: "../../public/assets/pizza5.jpg" },
+  { id: 6, title: "pepperoni pizza", image: "../../public/assets/pizza4.jpg" },
+  { id: 7, title: "paneer pizza", image: "../../public/assets/pizza13.jpg" },
+  { id: 8, title: "cheesy pizza", image: "../../public/assets/pizza7.jpg" },
+  { id: 9, title: "thin sausage pizza", image: "../../public/assets/pizza9.jpg" },
+  { id: 10, title: "roasted cheese pizza", image: "../../public/assets/pizza10.jpg" },
+  { id: 11, title: "mozarella cheese pizza", image: "../../public/assets/pizza11.jpg" },
+  { id: 12, title: "salsa sauce pizza", image: "../../public/assets/pizza12.jpg" },
+  { id: 13, title: "3All-Out pizza", image: "../../public/assets/pizza8.jpg" },
 ];
 
 const loadMoreCards = (page) => {
@@ -44,22 +44,22 @@ const loadMoreCards = (page) => {
     {
       id: page * 2 + 1,
       title: `new pizza ${page * 2 + 1}`,
-      image: "src/assets/pizza14.jpg",
+      image: "../../public/assets/pizza14.jpg",
     },
     {
       id: page * 2 + 2,
       title: `new pizza ${page * 2 + 2}`,
-      image: "src/assets/pizza15.jpg",
+      image: "../../public/assets/pizza15.jpg",
     },
     {
       id: page * 3 + 3,
       title: `new pizza ${page * 3 + 3}`,
-      image: "src/assets/pizza16.jpg",
+      image: "../../public/assets/pizza16.jpg",
     },
     {
       id: page * 4 + 4,
       title: `new pizza ${page * 4 + 4}`,
-      image: "src/assets/pizza17.jpg",
+      image: "../../public/assets/pizza17.jpg",
     },
   ];
   return newCards;
