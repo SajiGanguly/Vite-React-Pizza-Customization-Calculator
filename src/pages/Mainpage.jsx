@@ -263,7 +263,7 @@ function MainPage() {
           }}
         >
           <motion.img
-            src="src/assets/deliveryman.png"
+            src="../../public/assets/deliveryman.png"
             style={{ width: "300px", height: "auto" }}
           />
           {/* <Button
