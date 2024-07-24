@@ -120,6 +120,7 @@ function MainPage() {
           padding: "20px",
           backgroundColor: "#f27866",
           gap: "20px",
+          minHeight: "100vh",
         }}
       >
         <div
@@ -128,6 +129,7 @@ function MainPage() {
             justifyContent: "space-around",
             width: "100%",
             gap: "20px",
+            flexWrap: "wrap",
           }}
         >
           <div
@@ -138,6 +140,7 @@ function MainPage() {
               borderRadius: "8px",
               backgroundColor: "#faaa9d",
               flex: 1,
+              minWidth: "250px",
             }}
           >
             <Crusts setTheCrust={setTheCrust} />
@@ -151,6 +154,7 @@ function MainPage() {
               borderRadius: "8px",
               backgroundColor: "#faaa9d",
               flex: 1,
+              minWidth: "250px",
             }}
           >
             <PizzaSize setTheSize={setTheSize} />
@@ -162,6 +166,7 @@ function MainPage() {
             justifyContent: "center",
             width: "100%",
             gap: "20px",
+            flexWrap: "wrap",
           }}
         >
           <div
@@ -172,12 +177,29 @@ function MainPage() {
               borderRadius: "8px",
               backgroundColor: "#f29c77",
               flex: 1,
+              minWidth: "250px",
             }}
           >
             <Toppings setTheToppings={setTheToppings} />
           </div>
         </div>
-        <Button onClick={() => openModal()}>Checkout</Button>
+        <Button
+          onClick={openModal}
+          style={{
+            backgroundColor: "#ff6347",
+            color: "white",
+            padding: "10px 20px",
+            borderRadius: "8px",
+            boxShadow: "0 4px 8px rgba(0,0,0,0.1)",
+            transition: "background-color 0.3s ease, transform 0.2s ease",
+            outline: "none",
+            cursor: "pointer",
+          }}
+          onMouseEnter={(e) => (e.target.style.backgroundColor = "#e05252")}
+          onMouseLeave={(e) => (e.target.style.backgroundColor = "#ff6347")}
+        >
+          Checkout
+        </Button>
       </div>
 
       {/* <Container>
@@ -258,8 +280,7 @@ function MainPage() {
             width: "100%",
             maxWidth: "1000px",
             height: "auto",
-            overflow: "hidden", 
-            
+            overflow: "hidden",
           }}
         >
           <motion.img
